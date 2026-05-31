@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: ru-RU
-  baseUrl: artyom-vetlugin.github.io/tank500-kzwiki-publish
+  baseUrl: tank500-kzwiki.github.io
   ignorePatterns:
     - private
     - templates
@@ -195,8 +195,8 @@ plugins:
     enabled: true
     options:
       links:
-        Исходники и скачивание: https://github.com/artyom-vetlugin/tank500-kzwiki-publish
-        Как пользоваться с LLM: https://artyom-vetlugin.github.io/tank500-kzwiki-publish/использование-с-llm
+        Исходники и скачивание: https://github.com/tank500-kzwiki/tank500-kzwiki.github.io
+        Как пользоваться с LLM: https://tank500-kzwiki.github.io/использование-с-llm
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

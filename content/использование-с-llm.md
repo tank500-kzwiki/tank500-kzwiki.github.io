@@ -13,14 +13,14 @@
 
 Исходники вики и инструкции для LLM лежат в публичном репозитории на GitHub:
 
-**https://github.com/artyom-vetlugin/tank500-kzwiki-publish**
+**https://github.com/tank500-kzwiki/tank500-kzwiki.github.io**
 
 Скачать целиком можно двумя способами:
 
 - **Кнопка «Code → Download ZIP»** на GitHub — без установки чего-либо.
 - **`git clone`** (если есть git):
   ```
-  git clone https://github.com/artyom-vetlugin/tank500-kzwiki-publish.git
+  git clone https://github.com/tank500-kzwiki/tank500-kzwiki.github.io.git
   ```
 
 ## Что внутри
