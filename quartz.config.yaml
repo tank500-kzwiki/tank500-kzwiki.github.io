@@ -11,6 +11,8 @@ configuration:
     - private
     - templates
     - .obsidian
+    - log.md
+    - источники/_статус-разбора.md
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
