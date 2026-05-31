@@ -1,4 +1,5 @@
 ---
+unlisted: true
 тип: источник
 файл: "raw/tankz-club/tank-500/2025-10.md"
 период: "2025-10"

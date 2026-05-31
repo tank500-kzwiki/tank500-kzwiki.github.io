@@ -1,4 +1,5 @@
 ---
+unlisted: true
 тип: источник
 файл: "raw/tankz-club/service-campaign-tank-300-500/2026-04.md"
 период: "2026-04-02 — 2026-04-25"

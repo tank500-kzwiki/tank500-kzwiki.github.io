@@ -1,4 +1,5 @@
 ---
+unlisted: true
 тип: источник
 файл:
   - "raw/tankz-club/tech-questions-t500/2023-10.md"

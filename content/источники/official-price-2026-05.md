@@ -1,4 +1,5 @@
 ---
+unlisted: true
 тип: источник
 файл: "raw/official/tank-500-price-2026-05.pdf"
 период: "2026-05"

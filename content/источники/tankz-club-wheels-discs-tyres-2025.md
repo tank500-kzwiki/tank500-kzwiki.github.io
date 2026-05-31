@@ -1,4 +1,5 @@
 ---
+unlisted: true
 тип: источник
 файл: "raw/tankz-club/wheels-discs-tyres-t500/2025-{01..12}.md"
 период: "2025-01 — 2025-12"
