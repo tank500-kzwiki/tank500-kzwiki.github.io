@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Tank 500 Wiki
-  pageTitleSuffix: " — сообщество владельцев (KZ)"
+  pageTitle: Tank 500 Wiki — Казахстан
+  pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics: null
