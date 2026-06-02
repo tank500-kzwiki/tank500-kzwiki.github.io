@@ -42,6 +42,23 @@ jobs:
         run: npm ci
       - name: Install Quartz plugins
         run: npx quartz plugin install
+      - name: Patch explorer (top-level folders open by default)
+        run: |
+          node -e '
+          const fs=require("fs"),path=require("path");
+          const root=".quartz/plugins/explorer/dist";
+          const FROM=`r[u.slug]!==void 0?r[u.slug]:!0`;
+          const TO=`r[u.slug]!==void 0?r[u.slug]:t!==""`;
+          const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>{const p=path.join(d,e.name);return e.isDirectory()?walk(p):[p];});
+          let patched=0,already=0;
+          for(const f of walk(root).filter(f=>f.endsWith(".js"))){
+            let s=fs.readFileSync(f,"utf8");
+            if(s.includes(FROM)){fs.writeFileSync(f,s.split(FROM).join(TO));patched++;console.log("  patched",f);}
+            else if(s.includes(TO)){already++;}
+          }
+          if(patched===0&&already===0){console.error("::error::explorer patch target not found — plugin changed, review patch in deploy.yml");process.exit(1);}
+          console.log(`explorer patch: ${patched} patched, ${already} already-patched`);
+          '
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
