@@ -21,7 +21,7 @@ unlisted: true
 # TANKZ Club: топик «Вопрос и Ответы» (T500-фильтр), 2025
 
 Источник: топик **«Вопрос и Ответы»** Telegram-группы TANKZ Club.
-Pre-filtered: `raw/tankz-club/questions-and-answers-t500/` (скрипт `tools/filter_t500_qa.py`).
+Pre-filtered: `raw/tankz-club/questions-and-answers-t500/` (скрипт `tools/filter_t500.py --loose`).
 Фильтр отобрал **~80 блоков** за 2025 год.
 
 ## Период

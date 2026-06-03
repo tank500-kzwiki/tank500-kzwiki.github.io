@@ -33,6 +33,9 @@ mkdir -p "$REPO/llm-kit/skills"
 cp "$VAULT/CLAUDE.md" "$REPO/llm-kit/CLAUDE.md"
 rsync -a --delete "$VAULT/.claude/skills/" "$REPO/llm-kit/skills/"
 
+echo "==> Инструменты: tools/ -> tools/"
+rsync -a --delete "$VAULT/tools/" "$REPO/tools/"
+
 echo "==> git commit + push"
 git add -A
 if git diff --cached --quiet; then

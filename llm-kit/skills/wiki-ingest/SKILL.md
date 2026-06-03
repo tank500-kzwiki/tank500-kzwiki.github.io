@@ -88,11 +88,15 @@ description: Разбор (ingest) нового raw-источника в Tank 5
   `tech-questions/` — только чтение; для разбора использовать `tech-questions-t500/` (filtered).
   `general/` — только чтение; для разбора использовать `general-t500/` (filtered).
   `wheels-discs-tyres/` — только чтение; для разбора использовать `wheels-discs-tyres-t500/` (filtered).
-  Скрипт: `tools/filter_t500.py`.
+  Скрипт: `tools/filter_t500.py` (единый для всех топиков). Флаг `--loose` дополнительно оставляет
+  треды с одиночным «500» без ведущего «T» — только для курируемых топиков (questions-and-answers);
+  на шумных general/tech-questions он ловит «500 км», «500 тыс.» и т.п., поэтому там не использовать.
   Команды фильтрации:
   - `python3 tools/filter_t500.py raw/tankz-club/tech-questions/ --out raw/tankz-club/tech-questions-t500/`
   - `python3 tools/filter_t500.py raw/tankz-club/general/ --out raw/tankz-club/general-t500/`
   - `python3 tools/filter_t500.py raw/tankz-club/wheels-discs-tyres/ --out raw/tankz-club/wheels-discs-tyres-t500/`
+  - `python3 tools/filter_t500.py raw/tankz-club/suspension-chassis/ --out raw/tankz-club/suspension-chassis-t500/`
+  - `python3 tools/filter_t500.py raw/tankz-club/questions-and-answers/ --out raw/tankz-club/questions-and-answers-t500/ --loose`
   Страницы источников для general: `tankz-club-general-YYYY-MM.md`.
   Страницы источников для wheels-discs-tyres: `tankz-club-wheels-discs-tyres-YYYY.md`.
 - **Официальные** (`raw/official/`): PDF от GWM/дилеров; используются документы T500 (manual, price).
