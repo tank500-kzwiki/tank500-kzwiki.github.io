@@ -1,7 +1,7 @@
 ---
 тип: индекс
 title: "Tank 500 Wiki — Казахстан"
-последнее_обновление: "2026-06-01"
+последнее_обновление: "2026-06-03"
 ---
 
 > Неофициальная вики **для владельцев Tank 500 в Казахстане**. Основной источник — сообщество
@@ -202,6 +202,7 @@ title: "Tank 500 Wiki — Казахстан"
 - [[tankz-club-tank-500-2025-12|TANKZ Club: топик Tank 500, 2025-12]]
 - [[tankz-club-tank-500-2026-01|TANKZ Club: топик Tank 500, 2026-01]]
 - [[tankz-club-tank-500-2026-02|TANKZ Club: топик Tank 500, 2026-02]]
+- [[tankz-club-tank-500-2026-06|TANKZ Club: топик Tank 500, 2026-06]]
 - [[tankz-club-tank-500-2026-05|TANKZ Club: топик Tank 500, 2026-05]]
 - [[tankz-club-tank-500-2026-04|TANKZ Club: топик Tank 500, 2026-04]]
 - [[tankz-club-tank-500-2026-03|TANKZ Club: топик Tank 500, 2026-03]]
