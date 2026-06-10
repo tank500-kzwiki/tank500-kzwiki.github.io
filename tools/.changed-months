@@ -1,6 +1,2 @@
 # Изменённые цели ingest со времени последнего разбора.
-# Формат: <dir>/<YYYY-MM>.md  NEW|GREW|MEDIA  — заполняет sync_from_app.py, чистит wiki-ingest.
-#   NEW/GREW → wiki-ingest (новый/выросший текст). MEDIA → wiki-media-supplement (дозагрузка фото).
-# 2026-06-03: разобраны 2 текстовые цели; service-campaign media-supplement выполнен (+1 фото);
-#   массовый media-backfill tank-500 (30 мес.) пропущен по решению — текст-ingest уже взял ценные фото
-#   (пилот: 5 из 6 находок — дубликаты). raw с фото на месте; точечно вернуться можно по запросу.
+# Формат: <dir>/<YYYY-MM>.md  NEW|GREW  — заполняет sync_from_app.py, чистит wiki-ingest.
